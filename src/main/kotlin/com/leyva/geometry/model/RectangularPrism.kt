@@ -1,7 +1,10 @@
 package com.leyva.geometry.model
 
-data class RectangularPrism(
-        val width: Double,
-        val height: Double,
-        val depth: Double
-)
+class RectangularPrism(width: Double, height: Double, depth: Double){
+
+    var width = width
+    var height = height
+    var depth = depth
+    var volume = 0.0
+    var surfaceArea = 0.0
+}
