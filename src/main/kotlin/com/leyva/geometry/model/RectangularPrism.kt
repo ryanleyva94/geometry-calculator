@@ -1,7 +1,8 @@
 package com.leyva.geometry.model
 
-class RectangularPrism(width: Double, height: Double, depth: Double){
+class RectangularPrism(shape: String, width: Double, height: Double, depth: Double){
 
+    var shape = shape
     var width = width
     var height = height
     var depth = depth
