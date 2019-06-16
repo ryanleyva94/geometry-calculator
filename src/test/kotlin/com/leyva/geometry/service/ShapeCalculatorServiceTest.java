@@ -1,7 +1,7 @@
 package com.leyva.geometry.service;
 
 import com.leyva.geometry.model.RectangularPrism;
-import com.leyva.geometry.model.Shapes;
+import com.leyva.geometry.model.ShapeNames;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -18,7 +18,7 @@ public class ShapeCalculatorServiceTest {
 
     @Test
     public void testCalculateRectangularVolume(){
-        RectangularPrism rectangularPrism = new RectangularPrism(Shapes.RECTANGULAR_PRISM.getShapeName(), 2, 3, 4);
+        RectangularPrism rectangularPrism = new RectangularPrism(2, 3, 4);
 
         double volume = shapeCalculatorService.calculateRectangularVolume(rectangularPrism);
 
@@ -27,7 +27,7 @@ public class ShapeCalculatorServiceTest {
 
     @Test
     public void testCalculateRectangularSurfaceArea(){
-        RectangularPrism rectangularPrism = new RectangularPrism(Shapes.RECTANGULAR_PRISM.getShapeName(),2, 3, 4);
+        RectangularPrism rectangularPrism = new RectangularPrism(2, 3, 4);
 
         double surfaceArea = shapeCalculatorService.calculateRectangularServiceArea(rectangularPrism);
 
